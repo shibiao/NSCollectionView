@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SBItem" customModule="NSCollectionView" customModuleProvider="target">
+            <connections>
+                <outlet property="imgView" destination="v9z-Jb-vb9" id="qkE-ex-JFQ"/>
+                <outlet property="lab" destination="1QM-T4-Ir5" id="p90-AJ-LTX"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="item" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="226"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9z-Jb-vb9">
+                    <rect key="frame" x="-3" y="-9" width="486" height="238"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="aoF-oB-WBh"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" imageFrameStyle="grayBezel" image="0" id="SUp-lB-C3g"/>
+                </imageView>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1QM-T4-Ir5">
+                    <rect key="frame" x="0.0" y="-54" width="482" height="40"/>
+                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" id="QfY-Cl-WgC">
+                        <font key="font" metaFont="system"/>
+                        <string key="title"> NSTableRowView and custom NSView based NSTableview ? I initially started out with a view based NSTableView, but I soon noticed that I would have to handle the selection myself. I could not pull that off, so I went on to use NSTableRowView, which, strangely, does not call the initi</string>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="v9z-Jb-vb9" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="9dJ-EC-GNU"/>
+                <constraint firstAttribute="bottom" secondItem="1QM-T4-Ir5" secondAttribute="bottom" id="E7u-fI-LuU"/>
+                <constraint firstAttribute="trailing" secondItem="1QM-T4-Ir5" secondAttribute="trailing" id="GX9-E2-BqC"/>
+                <constraint firstAttribute="trailing" secondItem="v9z-Jb-vb9" secondAttribute="trailing" id="OXT-1K-nVQ"/>
+                <constraint firstItem="v9z-Jb-vb9" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="V16-z1-D3V"/>
+                <constraint firstItem="1QM-T4-Ir5" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="ZM3-lu-GQG"/>
+                <constraint firstItem="1QM-T4-Ir5" firstAttribute="top" secondItem="v9z-Jb-vb9" secondAttribute="bottom" constant="8" id="fUN-K5-var"/>
+            </constraints>
+            <point key="canvasLocation" x="-491" y="172"/>
+        </customView>
+        <customObject id="DAx-e3-7AB" customClass="SBItem" customModule="NSCollectionView" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="0" width="900" height="582"/>
+    </resources>
+</document>
